@@ -65,6 +65,7 @@ elseif("${PX4_BOARD_LABEL}" STREQUAL "canbootloader")
 	add_subdirectory(src/canbootloader)
 	list(APPEND nuttx_libs
 		canbootloader
+		bootloader_lib
 		drivers_board
 	)
 
